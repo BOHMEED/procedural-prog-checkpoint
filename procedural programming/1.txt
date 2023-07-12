@@ -1,0 +1,29 @@
+Algorithm: Dot Product
+
+Description:
+This algorithm calculates the dot product of two vectors and determines whether they are orthogonal.
+
+Procedure dot_product(v1, v2):
+    ps = 0
+    for i from 0 to length(v1) - 1 do:
+        ps = ps + (v1[i] * v2[i])
+    return ps
+
+Procedure check_orthogonal(vectors):
+    For each pair of vectors v1 and v2 in vectors do:
+        dot_prod = dot_product(v1, v2)
+        If dot_prod == 0 then:
+            Print "The vectors v1 and v2 are orthogonal."
+        Else:
+            Print "The vectors v1 and v2 are not orthogonal."
+
+Main Algorithm:
+Read the value of n (the number of vector pairs)
+Initialize an empty list called vectors
+
+For i from 1 to n do:
+    Read the values of vector v1
+    Read the values of vector v2
+    Add the pair (v1, v2) to the list vectors
+
+Call the procedure check_orthogonal(vectors)

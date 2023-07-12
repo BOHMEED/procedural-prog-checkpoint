@@ -1,0 +1,19 @@
+Algorithm: Insertion Sort
+
+Procedure insertion_sort(arr):
+    n = length(arr)
+    for i from 1 to n-1 do:
+        key = arr[i]
+        j = i - 1
+        while j >= 0 and arr[j] > key do:
+            arr[j+1] = arr[j]
+            j = j - 1
+        arr[j+1] = key
+
+Main Algorithm:
+Read the value of n (the size of the array)
+Read the elements of the array into the variable arr
+
+Call the procedure insertion_sort(arr)
+
+Print the sorted array arr
